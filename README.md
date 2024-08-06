@@ -1,15 +1,3 @@
-Inital Comments - Lukas
--Have to install PostMan (HTTPS testing), OpenAI (Text Generation)
--Postman through Desktop install, OpenAI through npm install
--I did not include the Node_Modules folder in the Github upload because there is too many files in it
--Started Following the code walkthrough and everything is updated through 9:00.
--I did not make an API key in OpenAI yet
-
-
-
-
-
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
