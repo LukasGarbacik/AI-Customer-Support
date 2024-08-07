@@ -1,13 +1,14 @@
 'use client'
 
-import { Box, Button, Stack, TextField } from '@mui/material'
+import { Box, Button, Stack, TextField, Typography } from '@mui/material'
 import { useState, useRef, useEffect } from 'react'
+
 
 export default function Home() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Welcome to the IM! What can I help you with today?",
+      content: "Hi! I'll be your personal AI Assistant. What can I do for you?",
     },
   ])
   const [message, setMessage] = useState('')
@@ -87,8 +88,18 @@ export default function Home() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      bgcolor="white"
+      bgcolor="#00274c"
     >
+    <Typography variant="h2" color="white" mb={2}>
+      Welcome to the IM
+    </Typography>
+      <Stack
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        spacing={3}
+      >
+        <img src="/images/recLogo.png" alt="Left Image" style={{ width: '300px', height: '300px' }} />
       <Stack
         direction={'column'}
         width="500px"
@@ -96,6 +107,8 @@ export default function Home() {
         border="1px solid black"
         p={2}
         spacing={3}
+        bgcolor="#ffcb05"
+        borderRadius="30px"
       >
         <Stack
           direction={'column'}
@@ -145,6 +158,8 @@ export default function Home() {
             {isLoading ? 'Sending...' : 'Send'}
           </Button>
         </Stack>
+      </Stack>
+      <img src="/images/recLogo.png" alt="Right Image" style={{ width: '300px', height: '300px' }} />
       </Stack>
     </Box>
   )
